@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - CMP</title>
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #343a40;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+        .main-content {
+            margin-left: 260px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container">
+            <h1 class="text-center">CMP - Panel de Administración</h1>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <a href="#" id="nav-empresas">Empresas</a>
+        <a href="#" id="nav-pacientes">Pacientes</a>
+        <a href="#" id="nav-medicos">Médicos</a>
+        <a href="#" id="nav-turnos">Turnos</a>
+        <a href="#" id="nav-salir" class="text-danger">Cerrar Sesión</a>
+    </div>
+
+    <div class="main-content container mt-4">
+        <div id="panel-content">
+            <div id="empresas-panel" class="panel">
+                <h2>Empresas</h2>
+                <div id="lista-empresas" class="row"></div>
+            </div>
+            <div id="pacientes-panel" class="panel d-none">
+                <h2>Pacientes</h2>
+                <div id="lista-pacientes" class="row"></div>
+            </div>
+            <div id="medicos-panel" class="panel d-none">
+                <h2>Médicos</h2>
+                <div id="lista-medicos" class="row"></div>
+            </div>
+            <div id="turnos-panel" class="panel d-none">
+                <h2>Turnos</h2>
+                <div id="lista-turnos" class="row"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detailsModalLabel">Detalles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-content">
+               
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/admin_panel.js"></script>
+</body>
+</html>

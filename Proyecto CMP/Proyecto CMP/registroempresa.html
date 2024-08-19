@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Empresa - CMP</title>
+    <link rel="shortcut icon" href="./assets/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex align-items-center gap-2" href="#"><img class="logo" src="./assets/logo2.png" alt="logo" /><span class="fw-bold">Clinica Medica Profesional</span>
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+                <a href="login.html" class="btn btn-primary ml-2">Login</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-4">
+        <h1>Registrar Nueva Empresa</h1>
+        <form id="form-register-empresa">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar Empresa</button>
+        </form>
+    </main>
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <img src="./assets/logo2.png" alt="Logo CMP" width="50">
+            <p>&copy; 2024 Clínica Médica Profesional. Todos los derechos reservados.</p>
+            <div>
+                <a href="#"><img src="./assets/facebook.png" alt="Facebook" width="30"></a>
+                <a href="#"><img src="./assets/twitter.png" alt="Twitter" width="30"></a>
+                <a href="#"><img src="./assets/instagram.png" alt="Instagram" width="30"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/registro_empresa.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CMP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#"><img class="logo" src="./assets/logo2.png" alt="logo" /><span class="fw-bold">Clinica Medica Profesional</span>
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="registro.html">Registrate</a></li>
+            
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <a href="login.html" class="btn btn-primary ml-2">Login</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Contáctanos</h2>
+        <p class="text-center">Estamos aquí para ayudarte. Ponte en contacto con nosotros.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Información de la Clínica</h4>
+                <p>Dirección: Calle General paz 576, Tucuman, Argentina</p>
+                <p>Teléfono: 03813573540</p>
+                <p>Email: contacto@cmp.com.ar</p>
+                <h4>Servicios Prestados</h4>
+                <ul>
+                    <li>Consulta general</li>
+                    <li>Especialidades médicas</li>
+                    <li>Laboratorio</li>
+                    <li>Imágenes médicas</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Formulario de Contacto</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h4>Ubicación</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14240.423666958226!2d-65.207167!3d-26.8365833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1724074546728!5m2!1ses!2sar" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <img src="./assets/logo2.png" alt="Logo CMP" width="50">
+            <p>&copy; 2024 Clínica Médica Profesional. Todos los derechos reservados.</p>
+            <div>
+                <a href="#"><img src="./assets/facebook.png" alt="Facebook" width="30"></a>
+                <a href="#"><img src="./assets/twitter.png" alt="Twitter" width="30"></a>
+                <a href="#"><img src="./assets/instagram.png" alt="Instagram" width="30"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/contacto.js"></script>
+</body>
+</html>
